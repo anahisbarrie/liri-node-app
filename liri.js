@@ -22,9 +22,9 @@ function UserInputs (userChoice, userParameter){
         case 'concert-this':
         DisplayConcertInfo(userParameter);
         break;
-        // case 'spotify-this-song':
-        //     DisplaySongInfo(userParameter);
-        // break;
+        case 'spotify-this-song':
+            DisplaySongInfo(userParameter);
+        break;
         // case 'movie-this':
         // DisplayMovieInfo(userParameter);
         // break;
@@ -66,6 +66,20 @@ function DisplayConcertInfo(userParameter){
         console.log(err)
     });
 }
+// 2. Function to display information on the song
 
-
-
+function DisplaySongInfo(userParameter) {
+    var spotify = new Spotify({
+        id: keys.spotify.id,
+        secret: keys.spotify.secret
+    });
+                
+    spotify.request('https://api.spotify.com/v1/tracks/7yCPwWs66K8Ba5lFuU2bcx')
+  .then(function(data) {
+                    console.log(data.album.artists[0].name);
+                })
+  .catch(function(err) {
+                    console.error('Error occurred: ' + err); 
+  });
+              }
+              
