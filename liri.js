@@ -25,9 +25,9 @@ function UserInputs (userChoice, userParameter){
         case 'spotify-this-song':
             DisplaySongInfo(userParameter);
         break;
-        // case 'movie-this':
-        // DisplayMovieInfo(userParameter);
-        // break;
+        case 'movie-this':
+        DisplayMovieInfo(userParameter);
+        break;
         // case 'do -what - it - says':
         // DisplayAnyInfo();
         // break;
@@ -72,14 +72,36 @@ function DisplaySongInfo(userParameter) {
     var spotify = new Spotify({
         id: keys.spotify.id,
         secret: keys.spotify.secret
-    });
-                
+    });         
     spotify.request('https://api.spotify.com/v1/tracks/7yCPwWs66K8Ba5lFuU2bcx')
   .then(function(data) {
-                    console.log(data.album.artists[0].name);
-                })
+
+            var result = "";
+                            // if (data.length > 0) { **PREGUNTAR***
+                            //   for (i = 0; i < data.length; i++) { **PREGUNTAR COMO SI NO HAY DATA**
+                  var artists = `artists: ${data.album.artists[0].name}\n`
+                  var songname = `songname: ${data.name}\n`
+                  var spotifylink = `spotifylink: ${data.album.external_urls.spotify}\n`
+                  var albumsong = `album: ${data.album.name}\n`
+                  var divider = `----------------------------------------------------------\n`
+                  result += artists + songname + spotifylink + albumsong
+            
+                console.log(result);
+                fs.appendFile("log.txt", result, function (err) {
+                  if (err) throw err;
+              });
+      })     
   .catch(function(err) {
                     console.error('Error occurred: ' + err); 
-  });
-              }
-              
+        });
+}
+
+//3. function to display info aout movies: node liri.js movie-this '<movie name here>'
+
+    function DisplayMovieInfo(userParameter) {
+
+
+
+
+        
+    }
