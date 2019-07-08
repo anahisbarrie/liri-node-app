@@ -28,9 +28,9 @@ function UserInputs (userChoice, userParameter){
         case 'movie-this':
         DisplayMovieInfo(userParameter);
         break;
-        // case 'do -what - it - says':
-        // DisplayAnyInfo();
-        // break;
+        case 'do-what-it-says':
+        DisplayAnyInfo();
+        break;
         default:
             console.log("Invalid option. Please type any of the following options: \nconcert-this \nspotify-this-song \nmovie-this \ndo-what-it-says")
     }
@@ -51,21 +51,17 @@ function DisplayConcertInfo(userParameter){
                 result += venueName + venuelocation + venuedate + divider
             }
             console.log(result);
-
-
             fs.appendFile("log.txt", result, function (err) {
                 if (err) throw err;});
-            
-
         } else {
             console.log("No concert found, find another artist")
         };
-
     })
     .catch(function(err){
         console.log(err)
     });
 }
+
 // 2. Function to display information on the song
 
 function DisplaySongInfo(userParameter) {
@@ -97,11 +93,40 @@ function DisplaySongInfo(userParameter) {
 }
 
 //3. function to display info aout movies: node liri.js movie-this '<movie name here>'
-
     function DisplayMovieInfo(userParameter) {
-
-
+        var movieUrl = "http://www.omdbapi.com/?t=" + userParameter + "&apikey=75970c5c" ; 
+        axios.get(movieUrl)
+            .then(function (response) {
+                // console.log(response.data);    THIS DATA IS ANSWERING PROPERLY
+                var result = "";
+                if (response.data.length > 0) {
+                    for (i = 0; i < response.data.length; i++) {
+                        var tittleMovie = `Title: ${response.data.Title}\n`
+                        var movieYear = `Year: ${response.data.Year}\n`
+                        var IMDBrating = `IMDB rating: ${response.data.imdbRating}\n`
+                        var rottenTomatoesRating = `rtomatoes: ${response.data.Ratings[1].Value}\n`
+                        var Country = `Country: ${response.data.Country}\n`
+                        var Language = `Language: ${response.data.Language}`
+                        var Plot = `Plot: ${response.data.Plot}`
+                        var Actors = `Actors: ${response.data.Actors}`
+                        var divider = `--------------------------------------------------------------\n`
+                        result += tittleMovie + movieYear + IMDBrating + rottenTomatoesRating + Country + Language + Plot + Actors 
+                        console.log(result);
+                    }
+                    fs.appendFile("log.txt", result, function (err) {
+                        if (err) throw err;
+                    });
+                } 
+                else {
+                    console.log("Mr. Nobody =  " + "https://www.imdb.com/title/tt0485947/")
+                };
+            })
+            .catch(function (err) {
+                console.log(err)
+            });
+    }
+//4. function to do-what-it-says'
 
 
         
-    }
+    
