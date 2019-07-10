@@ -62,3 +62,24 @@ artists: blink-182
 songname: All The Small Things
 spotifylink: https://open.spotify.com/album/5qt11cWjSs5Gbqj2Wyfu38
 album: Enema Of The State
+Title: Free Willy
+Year: 1993
+IMDB rating: 5.9
+rtomatoes: 57%
+Country: USA, France, Mexico
+Language: EnglishPlot: When a boy learns that a beloved killer whale is to be killed by the aquarium owners, the boy risks everything to free the whale.Actors: Jason James Richter, Lori Petty, Jayne Atkinson, August SchellenbergTitle: Free Willy
+Year: 1993
+IMDB rating: 5.9
+rtomatoes: 57%
+Country: USA, France, Mexico
+Language: English
+Plot: When a boy learns that a beloved killer whale is to be killed by the aquarium owners, the boy risks everything to free the whale.
+Actors: Jason James Richter, Lori Petty, Jayne Atkinson, August Schellenberg
+artists: blink-182
+songname: All The Small Things
+spotifylink: https://open.spotify.com/album/5qt11cWjSs5Gbqj2Wyfu38
+album: Enema Of The State
+artists: blink-182
+songname: All The Small Things
+spotifylink: https://open.spotify.com/album/5qt11cWjSs5Gbqj2Wyfu38
+album: Enema Of The State
