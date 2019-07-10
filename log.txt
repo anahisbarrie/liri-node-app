@@ -83,3 +83,75 @@ artists: blink-182
 songname: All The Small Things
 spotifylink: https://open.spotify.com/album/5qt11cWjSs5Gbqj2Wyfu38
 album: Enema Of The State
+venue: Mercedes-Benz Superdome
+location: New Orleans
+date: 2019-07-14T19:30:00
+--------------------------------------------------------------
+venue: TIAA Bank Field
+location: Jacksonville
+date: 2019-07-19T19:30:00
+--------------------------------------------------------------
+venue: Lincoln Financial Field
+location: Philadelphia
+date: 2019-07-23T20:00:00
+--------------------------------------------------------------
+venue: NRG Park
+location: Houston
+date: 2019-07-27T19:30:00
+--------------------------------------------------------------
+venue: MetLife Stadium
+location: East Rutherford
+date: 2019-08-01T19:30:00
+--------------------------------------------------------------
+venue: MetLife Stadium
+location: East Rutherford
+date: 2019-08-05T19:30:00
+--------------------------------------------------------------
+venue: Broncos Stadium at Mile High
+location: Denver
+date: 2019-08-10T07:30:00
+--------------------------------------------------------------
+venue: CenturyLink Field
+location: Seattle
+date: 2019-08-14T19:30:00
+--------------------------------------------------------------
+venue: Levi's Stadium
+location: Santa Clara
+date: 2019-08-18T19:30:00
+--------------------------------------------------------------
+venue: Rose Bowl Stadium
+location: Pasadena
+date: 2019-08-22T19:30:00
+--------------------------------------------------------------
+venue: State Farm Stadium
+location: Glendale
+date: 2019-08-26T20:00:00
+--------------------------------------------------------------
+venue: Hard Rock Stadium
+location: Miami Gardens
+date: 2019-08-31T20:00:00
+--------------------------------------------------------------
+artists: blink-182
+songname: All The Small Things
+spotifylink: https://open.spotify.com/album/5qt11cWjSs5Gbqj2Wyfu38
+album: Enema Of The State
+artists: blink-182
+songname: All The Small Things
+spotifylink: https://open.spotify.com/album/5qt11cWjSs5Gbqj2Wyfu38
+album: Enema Of The State
+Title: Free Willy
+Year: 1993
+IMDB rating: 5.9
+rtomatoes: 57%
+Country: USA, France, Mexico
+Language: English
+Plot: When a boy learns that a beloved killer whale is to be killed by the aquarium owners, the boy risks everything to free the whale.
+Actors: Jason James Richter, Lori Petty, Jayne Atkinson, August Schellenberg
+artists: blink-182
+songname: All The Small Things
+spotifylink: https://open.spotify.com/album/5qt11cWjSs5Gbqj2Wyfu38
+album: Enema Of The State
+artists: blink-182
+songname: All The Small Things
+spotifylink: https://open.spotify.com/album/5qt11cWjSs5Gbqj2Wyfu38
+album: Enema Of The State
